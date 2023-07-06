@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+nav {
+    background-color: #6b1d8a;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14pt;    
+    color: white;
+}
+nav .material-symbols-outlined{
+    display: none;
+    font-size: 30pt;
+}
+nav img{
+    width: 300px;
+    height: 80px;
+    margin: 15px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul a li {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    transition: .5s;
+}
+nav ul a li:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: .5s;
+}
+/* Lead */
+#Section1{
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;				
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0), rgba(0, 0, 0, 0.795)), url("Lead_Picture.JPG");
+    background-position: center;
+    background-color: #acd1f3;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+#Section1 .Lead_Text{
+    font-size: 26pt;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    animation: 1s ease-out 0s 1 titlePopUp;
+}
+#Section1 .Lead_Text h1{
+    font-family: 'Playfair Display', serif;
+}
+#Section1 .Lead_Text h4{
+    font-weight: normal;
+}
+#Section1 .Lead_Text p{
+    font-size: .7em;
+}
+/* Mission and Vision */
+#Section2 {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+}
+#Section2 h1{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline purple;
+    font-size: 2.25rem;
+}
+#Section2 .Container {
+    display: flex;
+}
+#Section2 .Container .Box{
+    background-color: #6b1d8a;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: ease .5s;
+}
+#Section2 .Container .Box:hover{
+    transform: scale(1.02);
+    transition: ease .5s;
+}
+#Section2 .Container .Box h2{
+    font-size: 1.75rem;
+    padding-bottom: 20px;
+    color: white;
+}
+#Section2 .Container .Box p{
+    font-size: 1.05rem;
+    border-left: 5px solid white;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* Goals and Core Values */
+#Section3{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+#Section3 .QuoteContainer {  
+    font-family: 'Poppins', sans-serif;
+}
+#Section3 .QuoteContainer .Quote {
+    transition: .5s;
+    background-image: url("Goal_Picture.JPG");
+    background-position: center;
+    background-size: 600px;
+    margin: 20px;
+    height: 350px;
+    width: 200px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.548);  
+    border-radius: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+#Section3  .QuoteContainer .Quote:hover{
+    transform: scale(1.1);
+    border-radius: 50px 0px 50px 0px;
+}
+#Section3 .QuoteContainer .Quote .TextUnder {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.484);
+    position: relative;
+    top: 90px;
+    transition: .5s; 
+}
+#Section3 .QuoteContainer .Quote:hover .TextUnder{
+    top:0%;
+    transition: .5s;
+}
+#Section3 .QuoteContainer .Quote .TextUnder h2 {
+    color: white;
+    text-shadow: -3px 3px 3px #0000008c;
+}
+#Section3 .Container div{
+    background-color: #6b1d8a;
+    padding: 30px;
+    margin: 30px;
+    width: 45vw;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 16px;
+}
+#Section3 .Container h1{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: white;
+}
+#Section3 .Container p{
+    font-size: 1.05rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    border-left: 5px solid  white; 
+    padding-left: 15px;
+}
+#Section3 .Container div:hover{
+    transform: scale(1.02);
+    transition: .5s ease;
+}
+/* Alumni Projects */
+#Section5{
+    font-size: 16px;
+}
+#Section5 .Container{
+    height: 600px;
+    display: flex;
+    background-image: linear-gradient(90deg, rgba(2,0,36,0) 50%, rgba(42,42,42,1) 100%), url("Projects_Main.jpg");
+}
+#Section5 .Container .Box{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section5 .Container .Box .TextHolder{
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
+}
+#Section5 .Container .Box .TextHolder h1{
+    font-family: 'Cinzel', serif;
+    color: #6E6EFF;
+    font-size: 3rem;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.274);
+}
+#Section5 .Container .Box .TextHolder h2{
+    font-size: 2.25rem;
+    color: white;
+}
+#Section5 .Container .Box .TextHolder h2 span{
+    color: #6E6EFF;
+}
+#Section5 .Container .Box .TextHolder h3 {
+    font-size: 1.75rem;
+    color: #F3CF00; 
+}
+#Section5 .Container .Box .TextHolder h5 {
+    font-size: .75rem;
+    color: white;
+    margin-bottom: 30px;
+} 
+#Section5 .Container .Box .TextHolder p{
+    font-size: 20pt;
+    color: white;
+    margin-bottom: 40px;
+}
+#Section5 .Container .Box .TextHolder p span{
+    color: #6E6EFF;
+}
+#Section5 .Container p{
+    font-size: 28pt;
+    font-weight: bold;
+}
+/* Announcement */
+#Section6 {
+    font-family: 'Manrope', sans-serif;
+}
+#Section6 h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.25rem;
+    text-decoration: underline 4px #b634ea;
+}
+#Section6 .Container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+#Section6 .Box {
+    background-color: #C9C9C9;
+    margin: 20px;
+    border-radius: 10px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Section6 .Box:hover{
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.534);
+    transition: .3s ease;
+}
+#Section6 .Box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#Section6 .Box .TextHolder{
+    padding: 20px;
+}
+#Section6 .Box .TextHolder h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #6B1D8A;
+}
+#Section6 .Box .Link {
+    text-align: center;
+    background-color: #6B1D8A;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#Section6 .Box .Link p{
+    padding: 20px;
+}
+#Section6 .Box .Link p:hover::after{
+    content:'>';
+}
+#Section6 .Box .Link a {
+    text-decoration: none;
+    color: white;
+}
+footer{
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+footer .Container {
+    display: flex;
+    margin: 50px;
+}
+footer .Container div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+footer .Container img{
+    width: 135px;
+    height: 100%;
+}
+footer .Container div h2{
+    font-weight: 400;
+}
+footer .Container div p{
+    padding: 5px;
+}
+#copyright {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background: rgb(54, 54, 54);
+    color: white;
+}
+@media (min-width: 1500px){
+    #Section6 .Container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 1000px){
+    nav {
+        align-items: center;
+    }
+    nav ul li {
+        display: none;
+        margin-right: 20px;
+    }
+    nav .material-symbols-outlined{
+        display: block;
+        margin-right: 20px;
+    }
+    .navresponsive img{
+        display: none;
+    }
+    .navresponsive ul{ 
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navresponsive ul a li{
+        display: block;
+        padding: 10px;
+    }
+    #Section1{
+        background-image: linear-gradient(to bottom, rgb(0,0,0,0), rgba(0, 0, 0, 0.795)), 
+        url("Lead_Picture_Mobile.JPG");
+    }
+    #Section1 .Lead_Text{
+        margin: 20px;
+    }
+    #Section2 .Container{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #Section3 .QuoteContainer .Quote{
+        display: none;
+    }
+    #Section3 .Container div{
+        width: auto;
+    }
+    #Section5 .Container {
+        flex-direction: column;
+        height: auto;
+        background-image: linear-gradient(180deg, rgba(2,0,36,0) 50%, rgba(42,42,42,1) 100%), url("AlumniProjects.JPG");
+        background-position: center;
+    }
+    #Section5 .Container .Box{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    #Section5 .Container .Box .TextHolder {
+        margin-bottom: 0px;
+    }
+    #Section5 .Container .Box .TextHolder h1 {
+        color: #F3CF00;
+    }
+    #Section5 .Container .Box .TextHolder h2, #Section5 .Container .Box .TextHolder h3{
+        display: none;
+    }
+    #Section5 .Container .Box .TextHolder p span {
+        color:#F3CF00;
+    }
+    #Section6 .Container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #Section6 .Box{
+        width: auto;
+        margin: 20px;
+    }
+    #Section6 .Box img {
+        display: none;
+    }
+    #Section6 .Box .TextHolder{
+        padding: 30px;
+    }
+    footer .Container {
+        flex-direction: column;
+    }
+    footer .Container img{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    nav img{
+        display: none;
+    }
+    nav .material-symbols-outlined{
+        margin: 30px;
+    }
+}
+@media (min-width: 1400px){
+    #Section1{
+        background-image: Linear-gradient(to bottom, rgb(0,0,0,0), rgba(0, 0, 0, 0.795)),
+        url("Lead_Picture_WideScreen.jpg");
+        background-size: 130%;
+    }
+}
+@keyframes titlePopUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}

@@ -1,0 +1,2 @@
+To transfer per website:
+@media, navbar + responsive, footer, fonts

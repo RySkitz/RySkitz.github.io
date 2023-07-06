@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+nav {
+    background-color: #6b1d8a;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14pt;
+    color: white;
+}
+nav .material-symbols-outlined{
+    display: none;
+    font-size: 30pt;
+}
+nav img{
+    width: 300px;
+    height: 80px;
+    margin: 15px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul a li {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    transition: .5s;
+}
+nav ul a li:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: .5s;
+}
+#Section4{
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+}
+#Section4 h1{
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline purple;
+    font-size: 24pt;
+}
+#Section4 .Executive{
+    display: flex;
+    justify-content: center;
+}
+#Section4 .Officers1{
+    display: flex;
+    justify-content: center;
+}
+#Section4 .Officers2{
+    display: flex;
+    justify-content: center;
+}
+#Section4 .Box{
+    background-color: #FFB50B;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: -5px 10px 10px #888888;
+}
+#Section4 .Box .Container{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+#Section4 .Box .Container .Text{
+    margin-left: 15px;
+}
+#Section4 .Box .Container .Image img{
+    object-fit: cover;
+}
+#Section4 .Box .Container .Text h2{
+    margin-bottom: 10px;
+}
+footer{
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+footer .Container {
+    display: flex;
+    margin: 50px;
+}
+footer .Container div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+footer .Container img{
+    width: 135px;
+    height: 100%;
+}
+footer .Container div h2{
+    font-weight: 400;
+}
+footer .Container div p{
+    padding: 5px;
+}
+#copyright {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background: rgb(54, 54, 54);
+    color: white;
+}
+@media (max-width: 1000px){
+    nav {
+        align-items: center;
+    }
+    nav ul li {
+        display: none;
+        margin-right: 20px;
+    }
+    nav .material-symbols-outlined{
+        display: block;
+        margin-right: 20px;
+        margin: 30px;
+    }
+    .navresponsive img{
+        display: none;
+    }
+    .navresponsive ul{ 
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navresponsive ul a li{
+        display: block;
+        padding: 10px;
+    }
+    #Section4 .Box .Container{
+        flex-direction: column;
+    }
+    #Section4 .Box .Container .Text{
+        text-align: center;
+        margin-left: 0;
+    }
+    #Section4 .Box .Container .Text h2{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #Section4 .Executive, .Officers1, .Officers2{
+        margin: 20px;
+    }
+    footer .Container {
+        flex-direction: column;
+    }
+    footer .Container img{
+        display: none;
+    }
+}
+@media (max-width: 750px){
+    #Section4 .Executive, .Officers1, .Officers2{
+        flex-direction: column;
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 500px){
+    nav img{
+        display: none;
+    }
+    nav .material-symbols-outlined{
+        margin: 30px;
+    }
+}
